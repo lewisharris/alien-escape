@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+body{
+    background: #232324;
+    font-family:helvetica,arial,sans-serif;
+    color:#232324;
+    letter-spacing: 0px;
+}
+
+#mainTitle{
+    font-family: 'Bangers', sans-serif;
+    color:#228B22;
+    letter-spacing:4px;
+    text-shadow:  2px 2px 0px #232324;
+    font-size:4rem;
+    margin:10px auto;
+    text-align:center;
+    line-height:1;   
+}
+
+.container{
+    background:#fefefe;
+    margin:7% auto;
+    padding:2%;
+    width:75vw;
+}
+
+#svg-container{
+    max-height:40vh;
+    max-width:700px;
+    overflow:hidden;
+}
+#alien-scene{
+    max-height:40vh;
+    max-width:700px;
+    position: relative;
+}
+
+.text-center{
+    max-width:700px;
+    text-align:center;
+    margin:0px auto;
+    line-height:1.5;
+}
+
+#keyboard{
+   display:grid;
+   grid-template-columns: repeat(auto-fit,minmax(60px,1fr));
+   grid-gap:0.5rem;
+   justify-items:center;
+}
+
+.keyboard-buttons{
+        min-width:60px;
+        background-color: #fff;
+        border-radius: 5px;
+        font-size: 2rem;
+        color:#232324 ;
+        line-height:1.5;
+        margin:auto;
+        border: solid 2px #232324;
+}
+#intro{
+    max-width:500px;
+    margin:10px auto;
+}
+.open-mouth{
+    display: inline;
+}
+
+.showWin{
+    display:inline;
+}
+
+.space-ship{
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.space-ship-rotated{
+    -webkit-transform:rotate(1deg);
+        -ms-transform:rotate(1deg);
+            transform:rotate(1deg);
+    -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+            transform-origin: top;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.space-ship-leave{
+    -webkit-transform: scale(7);
+        -ms-transform: scale(7);
+            transform: scale(7);
+}
+
+.beam{
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.beamPulse{
+    opacity:0.7;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.remove-beam{
+    opacity:0;
+    -webkit-transition: all 0.8s linear;
+    -o-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+
+#character{
+    position: absolute;
+    top:10px;
+}
+
+.red-light{
+    fill:red !important;
+    -webkit-transition: all 0.5s ease-in-out;    
+    -o-transition: all 0.5s ease-in-out;    
+    transition: all 0.5s ease-in-out;
+}
+
+.red-glow{
+    display: none;
+    -webkit-transition: all 0.2s ease-in-out;    
+    -o-transition: all 0.2s ease-in-out;    
+    transition: all 0.2s ease-in-out;
+}
+
+.alien-vanish{
+    opacity:0;
+    -webkit-transition: all 0.5s linear;    
+    -o-transition: all 0.5s linear;    
+    transition: all 0.5s linear;
+}
+.stars{
+
+    -webkit-transition: all 0.5s linear;    
+    -o-transition: all 0.5s linear;    
+    transition: all 0.5s linear;
+}
+.dimStars{
+    opacity:0.3;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+#win-or-lose{
+    color:#228B22;
+    height:40px;
+}
+
+#reset-game{
+    border-radius: 5px;
+    background:none;
+    margin:10px;
+    color: #228B22;
+    border: 2px solid #228B22;
+    padding: 18px 36px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 green;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+#reset-game:hover{
+    box-shadow: inset 0 100px 0 0 #228B22;
+    color:#fefefe;
+}
+
+
